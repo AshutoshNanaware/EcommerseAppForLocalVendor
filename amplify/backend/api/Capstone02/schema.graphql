@@ -1,0 +1,76 @@
+type Order @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  productid: ID
+  sellerid: ID
+  customerid: ID
+  productstatus: String
+  shippingaddress: String
+  zipcode: String
+  orderammount: Float
+  ordername: String
+  ordermobilenumber: String
+  orderdate: String
+  orderquantity: Float
+  productname: String
+  deliverydate: String
+}
+
+type Cart @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  productid: ID
+  customerid: ID
+  sellerid: ID
+  quantity: Float
+  productname: String
+}
+
+type Product @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  details: String
+  shopid: String
+  quantity: String
+  categoryid: String
+  prise: String
+  sellershopid: ID
+  productimg: String
+}
+
+type Shop @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  username: String!
+  shoppin: String
+  shopname: String
+  address: String
+}
+
+type Inventory @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  productid: ID
+  quantity: Float
+  productprise: Float
+}
+
+type ProductCategory @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  ProductID: String
+}
+
+type Customer @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  username: String!
+  name: String
+  mail: String
+  password: String
+  address: String
+  pin: String
+}
+
+type Seller @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  username: String!
+  name: String
+  mail: String
+  password: String
+}
+ 

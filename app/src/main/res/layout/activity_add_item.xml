@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItem">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Select Category"
+            android:textColor="#424242"
+            android:textSize="35dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_square_corner">
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/blue_square_corner">
+            <EditText
+                android:id="@+id/ProductName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Name of product"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:inputType="textPersonName" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/blue_square_corner">
+            <EditText
+                android:id="@+id/ProductQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Quantity"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:textCursorDrawable="@drawable/cursor_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/blue_square_corner">
+            <EditText
+                android:id="@+id/ProductPrise"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Prise"
+                android:inputType="number"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:textCursorDrawable="@drawable/cursor_color"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/blue_square_corner">
+
+            <EditText
+                android:id="@+id/ProductDescreption"
+                android:layout_width="324dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="About Product/Product Details"
+                android:inputType="textPersonName"
+                android:textCursorDrawable="@drawable/cursor_color" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/product_img"
+            android:layout_width="250dp"
+            android:layout_height="137dp"
+            app:srcCompat="@drawable/temp_logo"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/addImg"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/blue_square_button"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Add Image"
+            android:textAllCaps="false"
+            android:textSize="16dp" />
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/blue_square_button"
+            android:text="Upload"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:textSize="16dp" />
+
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/blue_square_corner"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="Main Page"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:background="#00000000"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

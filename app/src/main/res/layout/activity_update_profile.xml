@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfile"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update user information"
+        android:textSize="25dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#424242"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/blue_square_corner">
+
+        <EditText
+            android:id="@+id/storeName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Enter new store name"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_square_corner">
+        <EditText
+            android:id="@+id/storeAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Enter new store address"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_square_corner">
+        <EditText
+            android:id="@+id/storePincode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Enter new pincode"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/updateInformation"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/blue_square_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+</LinearLayout>

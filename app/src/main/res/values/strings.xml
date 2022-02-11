@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Capstone2.0</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="nav_open_customer">Open</string>
+    <string name="nav_close_customer">Close</string>
+</resources>
